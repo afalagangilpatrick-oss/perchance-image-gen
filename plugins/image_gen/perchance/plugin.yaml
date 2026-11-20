@@ -1,0 +1,28 @@
+name: perchance
+kind: image-gen
+description: Free Perchance text-to-image provider for Hermes (no account required)
+version: 0.2.0
+author: Community / Hermes user
+license: MIT
+homepage: https://perchance.org/ai-text-to-image-generator
+entry: plugins.image_gen.perchance
+requires: []
+tags:
+  - free
+  - text-to-image
+  - image-generation
+  - no-api-key
+  - perchance
+category: image-generation
+capabilities:
+  - text-to-image
+  - aspect-ratios
+  - negative-prompt
+  - guidance-scale
+min_hermes_version: "0.1"
+badge: free
+setup:
+  key: PERCHANCE_USER_KEY
+  prompt: "64-character hex userKey from the Perchance generator page (via DevTools)"
+  url: https://perchance.org/ai-text-to-image-generator
+  instructions: "Use `hermes perchance key fetch` (best effort with playwright) or manual DevTools method."
